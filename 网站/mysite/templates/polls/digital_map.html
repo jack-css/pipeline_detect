@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慧眼识管-管道检测</title>
+    <link rel="stylesheet" href="{%static 'css/refster.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>慧眼识管-管道检测</h1>
+    </div>
+</div>
+<div class="main">
+    <div class="info">
+        <!--            <p>姓名：钱嘉明&emsp;&emsp;&emsp;电话：1824555436</p>-->
+        <p>检测员姓名：钱嘉明</p>
+        <p>检测员电话：18245557436</p>
+        <p> 检测地址：陕西省西安市长安区西长安街 </p>
+        <p>小车当前状态：<span style="color: blue;background-color: rgba(211,180,21,0.86);font-weight: bold;">连接</span></p>
+    </div>
+    <div class="img_road">
+        <h3 style="text-align: center">当前数字地图</h3>
+        <img src="{% static '/img/管网.png' %}" alt="1">
+<!--    </div>-->
+<!--    <div class="img_guan_po">-->
+<!--        <h4 style="text-align: center">当前破损</h4>-->
+<!--        <img src="{% static '/img/管网.png' %}" alt="1">-->
+<!--    </div>-->
+    <div class="data_label">
+        <div class="data_static">本次检测里程：10m</div>
+         <div class="data_static" style="margin:2% 0 0 0;">破损点上报次数：1</div>
+    </div>
+    <div class="function_data">
+        <div class="upload">
+            <button id="upload_data">导入已有数字地图</button>
+        </div>
+        <div class="download">
+            <button id="download_data">导出自带数字地图</button>
+        </div>
+        <div class="watch">
+            <button id="reload_data">查看本次形成地图</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="page">
+    <div class="one">
+        <a href="/polls/d">数字地图</a>
+    </div>
+    <div class="two">
+        <a href="/polls/work">管道检测</a>
+    </div>
+    <div class="three">
+        <a href="/polls/upload">数据上报</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.container {
+    width: 100%;
+    height: 100%;
+    /*background-color: #666666;*/
+}
+
+.header {
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    padding: 10px;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+#btnStart,
+#btnStart_hum,
+#btnStop {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+/*#btnStart {*/
+/*    background-color: #d32222;*/
+/*    border-radius: 12px;*/
+/*}*/
+
+/*图像*/
+.map {
+    display: flex;
+}
+
+.deal_one, .deal_two {
+    text-align: center;
+    /*background-color: #666666;*/
+}
+
+
+.deal_end, .deal_ahead {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*页码*/
+.page {
+    display: flex;
+}
+
+
+.one, .two, .three {
+    flex: 1;
+    width: 30%;
+    height: 20%;
+    /*background-color: #194277;*/
+    padding-left: 20pt;
+}
+
+/*.two a {*/
+/*    color: #d32222;*/
+/*}*/
+
+
+/*弹框*/
+#popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 42%;
+    width: 30%;
+    height: 20%;
+    background-color: #1919a4;
+    color: #ea1111;
+    z-index: 100;
+}
+
+#popup .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* 按钮样式 */
+/* 整体容器样式 */
+#direction-big {
+    display: none;
+    position: absolute;
+}
+
+#direction-container {
+    display: flex;
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    gap: 20%; /* 按钮之间的间距 */
+    margin: 20px; /* 容器的外边距 */
+}
+
+.direction-button {
+    padding: 15px 30px; /* 按钮的内边距 */
+    font-size: 34px; /* 按钮的字体大小，确保箭头符号清晰可见 */
+    font-weight: bolder;
+    border-radius: 10px; /* 按钮的圆角 */
+    border: 2px solid #888; /* 按钮的边框 */
+    background-color: #f2f2f2; /* 按钮的背景颜色 */
+    cursor: pointer; /* 鼠标样式 */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 过渡效果 */
+}
+
+/* 按钮悬停效果 */
+.direction-button:hover {
+    background-color: #e6e6e6; /* 悬停时的背景颜色 */
+    transform: scale(1.05); /* 悬停时按钮轻微缩放 */
+}
+
+/* 按钮激活效果 */
+.direction-button:active {
+    background-color: #d4d4d4; /* 按下按钮时的背景颜色 */
+    transform: scale(0.95); /* 按下按钮时按钮轻微缩小 */
+}
+
+/*返航*/
+.auto_return {
+    background-color: #7e7eb4;
+    text-align: center;
+}
+
+/*当前页面显示*/
+.page .two {
+    border-bottom: 4px solid #000000;
+}

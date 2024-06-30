@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{%static 'css/login.css' %}">
+
+    <title>Registration</title>
+
+
+</head>
+<body>
+     <div class="container1">
+    <div class="header">
+        <h1>慧眼识管-管道检测</h1>
+    </div>
+</div>
+<div class="container">
+    <h2>注册/登录</h2>
+    <form action="login" method="post">
+        {% csrf_token %}
+<!--        防注入·攻击-->
+        <label for="userid">账号:</label>
+        <input type="text" id="userid" name="userid" required>
+
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="username">姓名:</label>
+        <input type="text" id="username" name="username" required>
+<!--        <p>请确保手机网络正常</p>-->
+        <input type="submit" value="注册/登录">
+        <p style="color: red;text-align: center">{{ error_name }}</p>
+    </form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+/*标题*/
+.header {
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+}
+
+/*功能*/
+.function_data {
+    display: flex;
+}
+
+.function_data .upload, .function_data .watch, .function_data .download {
+    flex: 1;
+    width: 50%;
+    height: 20%;
+    /*background-color: #1667ce;*/
+    padding-left: 20pt;
+}
+
+/*数据*/
+.now_data .info h2 {
+    text-align: center;
+}
+
+table td {
+    width: 5%;
+    white-space: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 20pt; /* 设置文本的最大宽度 */
+    max-height: 50pt;
+}
+
+.pot_detect {
+    width: 20%;
+}
+
+
+.now_data {
+    /*border: 1px solid #ccc;*/
+    padding: 10px;
+}
+
+.now_data table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.now_data th, .now_data td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+.now_data th {
+    background-color: #f2f2f2;
+}
+
+.now_data .info {
+    margin-bottom: 10px;
+}
+
+.now_data .info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/*页码*/
+.page {
+    display: flex;
+}
+
+
+.one, .two, .three {
+    flex: 1;
+    width: 30%;
+    height: 20%;
+    /*background-color: #194277;*/
+    padding-left: 20pt;
+}
+
+/*下载*/
+.download, .upload, .watch {
+    text-align: center;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.download button, .upload button, .watch button {
+    background-color: #008CBA;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.download button:hover {
+    background-color: #006495;
+}

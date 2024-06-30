@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慧眼识管-管道检测</title>
+    <link rel="stylesheet" href="{%static 'css/upload.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>慧眼识管-管道检测</h1>
+    </div>
+</div>
+<div class="main">
+    <div class="info">
+        <!--            <p>姓名：钱嘉明&emsp;&emsp;&emsp;电话：1824555436</p>-->
+        <p>检测员姓名：钱嘉明</p>
+        <p>检测员电话：18245557436</p>
+        <p> 检测地址：陕西省西安市长安区西长安街 </p>
+        <p>小车当前状态：<span style="color: blue;background-color: rgba(211,180,21,0.86);font-weight: bold;">连接</span></p>
+    </div>
+    <div class="now_data">
+        <div class="info">
+            <h2>本次检测数据</h2>
+        </div>
+        <table>
+            <tr>
+                <th>检测员姓名</th>
+                <th>检测日期</th>
+                <th class="pot_detect">检测地点</th>
+                <th>破损管道编号</th>
+                <th>破损程度</th>
+                <th>破损坐标</th>
+            </tr>
+            <tr>
+                <td>钱嘉明</td>
+                <td>2024/4/10</td>
+                <td>陕西省西安市长安区西长安街</td>
+                <td>108.9E-341N-10</td>
+                <td>2</td>
+                <td>108.90,34.15</td>
+            </tr>
+            <!--            <tr>-->
+            <!--                <td>钱嘉明</td>-->
+            <!--                <td>2024/4/10</td>-->
+            <!--                <td>陕西省西安市长安区西长安街</td>-->
+            <!--                <td>9</td>-->
+            <!--                <td>2</td>-->
+            <!--                <td>108.90,34.15</td>-->
+            <!--            </tr>-->
+        </table>
+    </div>
+    <div class="function_data">
+        <div class="upload">
+            <button id="upload_data">上报本次检测数据</button>
+
+        </div>
+        <div class="download">
+            <button id="download_data">下载本次检测数据</button>
+
+        </div>
+        <div class="watch">
+            <button id="reload_data">重置本次检测数据</button>
+        </div>
+
+    </div>
+
+</div>
+<div class="page">
+    <div class="one">
+        <a href="/polls/d">数字地图</a>
+    </div>
+    <div class="two">
+        <a href="/polls/work">管道检测</a>
+    </div>
+    <div class="three">
+        <a href="/polls/upload">数据上报</a>
+    </div>
+</div>
+<script src="{% static 'js/jquery-3.6.0.js' %}"></script>
+<script src="{% static 'js/upload.js' %}"></script>
+</body>
+</html>

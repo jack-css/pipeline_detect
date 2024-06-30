@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慧眼识管-管道检测</title>
+    <link rel="stylesheet" href="{%static 'css/first.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>慧眼识管-管道检测</h1>
+    </div>
+    <div class="main">
+        <div class="info">
+            <!--            <p>姓名：钱嘉明&emsp;&emsp;&emsp;电话：1824555436</p>-->
+            <p>检测员姓名：钱嘉明</p>
+            <p>检测员电话：18245557436</p>
+            <p> 检测地址：陕西省西安市长安区西长安街 </p>
+            <p>小车当前状态：
+                <button id="car_start">未连接</button>
+            </p>
+        </div>
+        <div class="map">
+            <div class="deal_one">
+                <h5>处理前</h5>
+                <img class="deal_ahead" id="image0" src="{% static '/img/logo.png' %}" alt="处理前的图像">
+                <!--                <img src="{{latest_question_list}}" alt="sv">-->
+            </div>
+            <div class="deal_two">
+                <h5>处理后</h5>
+                <img class="deal_end" id="image1" src="{% static '/img/logo.png' %}" alt="处理后的图像">
+            </div>
+        </div>
+        <div class="controls">
+            <button id="btnStart">开始自动检测</button>
+            <button id="btnStart_hum">开始人工检测</button>
+            <button id="btnStop">停止检测</button>
+        </div>
+    </div>
+
+</div>
+<!--一键返航-->
+<div class="auto_return">
+    <h3>一键返航</h3>
+</div>
+<div class="page">
+    <div class="one">
+        <a href="/polls/d">数字地图</a>
+    </div>
+    <div class="two">
+        <a href="/polls/work" style="color: black;">管道检测</a>
+    </div>
+    <div class="three">
+        <a href="/polls/upload">数据上报</a>
+    </div>
+</div>
+<!--消息弹框-->
+<div id="popup">
+    <h5>检测到破损，是否要上报？</h5>
+    <div class="buttons">
+        <button id="reject">拒绝</button>
+        <button id="agree">同意(5s)</button>
+    </div>
+</div>
+<!--人工检测方向框-->
+<div id="direction-big">
+    <div id="direction-container">
+        <button id="buttonForward" class="direction-button">↑</button>
+        <button id="buttonBackward" class="direction-button">↓</button>
+    </div>
+</div>
+<script>
+    // 定义一个变量用于存储静态文件的绝对路径
+    var staticUrl = "{% static '' %}";
+</script>
+<script src="{% static 'js/fist.js' %}"></script>
+</body>
+</html>
